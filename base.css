@@ -1,6 +1,5 @@
 BODY {
   font-family: sans-serif;
-  max-width: 1000px;
   margin: 0 auto;
   font-size: 0.9em;
   padding-bottom: 2em;
@@ -30,10 +29,12 @@ H2 {
 
 P {
   margin: 1em 3em 1em 3em;
+  max-width: 50em;
 }
 
 PRE {
   margin-left: 3em;
+  max-width: 50em;
 }
 
 A.theme {
