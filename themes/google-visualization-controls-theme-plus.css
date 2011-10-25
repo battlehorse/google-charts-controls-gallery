@@ -21,12 +21,14 @@
   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
+/* Labels */
 .google-visualization-controls-theme-plus .google-visualization-controls-label {
   color: #333;
   line-height: 27px;
   font-size: 13px;
 }
 
+/* StringFilter */
 .google-visualization-controls-theme-plus .google-visualization-controls-stringfilter INPUT {
   border: 1px solid #d9d9d9;
   border-top: 1px solid silver;
@@ -54,6 +56,9 @@
   outline: none;
 }
 
+/* NumberRangeFilter */
+
+/* NumberRangeFilter: label showing the current thumb value */
 .google-visualization-controls-theme-plus .google-visualization-controls-rangefilter-thumblabel {
   font-size: 14px;
   font-weight: normal;
@@ -62,6 +67,7 @@
   height: 27px;
 }
 
+/* NumberRangeFilter: slider bar */
 .google-visualization-controls-theme-plus .google-visualization-controls-slider-horizontal,
 .google-visualization-controls-theme-plus .google-visualization-controls-slider-vertical {
   background-color: #e5e5e5;
@@ -90,6 +96,7 @@
   background-color: #d1d1d1;
 }
 
+/* NumberRangeFilter: slider thumbs */
 .google-visualization-controls-theme-plus .google-visualization-controls-slider-horizontal .google-visualization-controls-slider-thumb,
 .google-visualization-controls-theme-plus .google-visualization-controls-slider-vertical .google-visualization-controls-slider-thumb {
   background-color: #999;
@@ -166,6 +173,7 @@
   cursor: row-resize;  
 }
 
+/* NumberRangeFilter: slider central handle */
 .google-visualization-controls-theme-plus .google-visualization-controls-slider-horizontal .google-visualization-controls-slider-handle {
   background-color: #c6c6c6;
   opacity: 1;
@@ -206,6 +214,9 @@
 	background-repeat:repeat-y;
 }
 
+/* CategoryFilter */
+
+/* CategoryFilter: Button style for dropdown category filters */
 .google-visualization-controls-theme-plus .google-visualization-controls-categoryfilter .goog-menu-button {
   border:1px solid #DCDCDC;
   border: 1px solid rgba(0,0,0,0.1);  
@@ -277,10 +288,17 @@
   padding: 3px 8px;
 }
 
+/* CategoryFilter: dropdown icon */
 .google-visualization-controls-theme-plus .google-visualization-controls-categoryfilter .goog-menu-button-dropdown {
-  background-position: -388px 5px;
+  background-position: -388px 5px;  /* -388px is for the CSS sprite */
 }
 
+/* CategoryFilter: dropdown menu */
+/* TODO(battlehorse): the menu is attached to the DOM outside of the control
+   itself (at the bottom of the body), so we cannot namespace this style.
+   Since the control default style is loaded usually after this style (when
+   the controls library is loaded), we force the theme styles with !important
+*/
 .goog-menu {
   background: #fff !important;
 	border:1px solid #ccc !important;
@@ -291,6 +309,7 @@
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
+/* CategoryFilter: dropdown menu entries */
 .goog-menuitem {
 	-moz-transition: background 0.130s;
 	-o-transition: background 0.130s;
@@ -310,6 +329,7 @@
   border: 0 ! important;
 }
 
+/* CategoryFilter: combobox / autocompleter */
 .google-visualization-controls-theme-plus .google-visualization-controls-categoryfilter .goog-combobox {
   background: none;
   border: 1px solid #d9d9d9;
@@ -356,6 +376,7 @@
   outline: none;
 }
 
+/* CategoryFilter: list of selected values (when multiple selection is allowed) */
 .google-visualization-controls-theme-plus .google-visualization-controls-categoryfilter-selected.goog-inline-block {
   top: -2px;
 }

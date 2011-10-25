@@ -168,6 +168,12 @@
   background-position: -388px 5px;
 }
 
+/* CategoryFilter: dropdown menu */
+/* TODO(battlehorse): the menu is attached to the DOM outside of the control
+   itself (at the bottom of the body), so we cannot namespace this style.
+   Since the control default style is loaded usually after this style (when
+   the controls library is loaded), we force the theme styles with !important
+*/
 .goog-menu {
   background: #fff !important;
 	border:2px solid #000 !important;
