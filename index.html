@@ -5,7 +5,9 @@
   <title>Google Charts Controls Gallery</title>
 
   <link rel="stylesheet" type="text/css" href="base.css">
+  <link rel="stylesheet" type="text/css" href="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.css" />
   
+  <script type="text/javascript" src="http://google-code-prettify.googlecode.com/svn/trunk/src/prettify.js"></script>
   <script type='text/javascript' src='http://www.google.com/jsapi'></script>
   <script type='text/javascript' src='controls.js'></script>
   <script type='text/javascript' src='theme.js'></script>
@@ -34,13 +36,25 @@
     google.setOnLoadCallback(ready);
   </script>
 </head>
-<body>
+<body onload="prettyPrint()">
   <h1>Google Charts Controls Gallery</h1>
   <a href="http://github.com/battlehorse/google-charts-controls-gallery">
     <img style="position: absolute; top: 0; right: 0; border: 0;"
          src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
          alt="Fork me on GitHub" />
-  </a> 
+  </a>
+  <p>
+      This page demonstrates all the controls that are part of the
+      <a href="http://code.google.com/apis/chart/interactive/docs/gallery/controls.html">
+        Google Charts "Controls and Dashboards" API</a> and showcases
+      a few different visual themes you can use with the library.
+  </p>
+  <p>
+    Pick a theme:
+    <a class="theme" href="#" id="themeDefault">Default</a>
+    <a class="theme" href="#google-visualization-controls-theme-plus" id="themePlus">Plus</a>
+    <a class="theme" href="#google-visualization-controls-theme-contrast" id="themeContrast">Hi-Contrast</a>
+  </p>
   <div id="themeWrapper">
     <div class="column">
       <div class='control' id='stringFilter'></div>
@@ -59,32 +73,114 @@
       <div class='control' id='multiBelowStackedComboPicker'></div>
     </div>
   </div>
-  
-  <a href="#" id="themeDefault">Default theme</a>
-  <a href="#google-visualization-controls-theme-plus" id="themePlus">Plus theme</a>
-  <a href="#google-visualization-controls-theme-contrast" id="themeContrast">Contrast theme</a>
 
   <h2>Overview</h2>
   <p>
-    Gallery and custom styling of widgets from Google Charts Controls and
-    Dashboards API
+    The <a href="http://code.google.com/apis/chart/interactive/docs/gallery/controls.html">
+      Google Charts "Controls and Dashboards" API</a>, part of the 
+      <a href="http://code.google.com/apis/chart">Google Chart Tools API</a>,
+      describes how to assemble multiple charts into dashboards and enrich them
+      with interactive controls to manipulate the data they display.
   </p>
 
-  <h2>Download</h2>
   <p>
-    You can download this project in either
-    <a href="http://github.com/battlehorse/google-charts-controls-gallery/zipball/master">zip</a> or
-    <a href="http://github.com/battlehorse/google-charts-controls-gallery/tarball/master">tar</a> formats.
+    <strong>Controls</strong> are user interface widgets (category pickers,
+    range sliders,  autocompleters...) you interact with in order to drive the
+    data managed by a dashboard and the charts that are part of it.
   </p>
+
+  <p>
+    This page demonstrates all the controls that are part of the API and
+    showcases a few different visual themes you can use with the library.
+  </p>
+  
+  <h2>Use a theme</h2>
+  
+  <p>
+    To use one of the themes defined here, it's enough to add its stylesheet
+    to the page where you are using Google Charts. 
+  </p>
+  
+  <pre class="prettyprint">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;!--Load the theme style--&gt;
+    <strong>&lt;link 
+        rel="stylesheet"
+        type="text/css"
+        href="google-visualization-controls-theme-plus.css" &gt;</strong>
+    &lt;!--Load the AJAX API--&gt;
+    &lt;script type="text/javascript" src="https://www.google.com/jsapi"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+
+      // Load the Visualization API and the controls package.
+      google.load('visualization', '1.0', {'packages':['controls']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawDashboard);
+
+      function drawDashboard() {
+        // your dashboard code here.
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="dashboard_div" <strong>class="google-visualization-controls-theme-plus"</strong> &gt;
+      &lt;!-- Render your dashboard here --&gt;
+    &lt;/div&gt;
+  
+  &lt;/body&gt;
+&lt;/html&gt;  
+  </pre>
+  
+  <p>
+    You can find the list of available themes
+    <a href="https://github.com/battlehorse/google-charts-controls-gallery/tree/gh-pages/themes">
+      here</a>.
+  </p>
+  
+  <h2>Write a theme</h2>
+  <p>
+    Have a look at one of the existing
+    <a href="https://github.com/battlehorse/google-charts-controls-gallery/tree/gh-pages/themes">
+      themes</a> and start by copying and modifying one of those. Many of the
+    controls widgets are built on top of the open source
+    <a href="http://code.google.com/closure/library/docs/gettingstarted.html">
+      CLosure library</a>, and they maintains the same style names. When
+    writing your own theme, ensure that you are properly namespacing all your
+    CSS rules to avoid overriding others.
+  </p>
+  
+  <p>
+    If you write a new theme, send us a pull request or contact us to have it
+    included here.
+  </p>
+
+  <h2>Source code</h2>
+  <p>
+    Get the source code for these themes on GitHub :
+    <a href="http://github.com/battlehorse/google-charts-controls-gallery">
+      battlehorse/google-charts-controls-gallery</a>
+  </p>
+
   <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
     by running:
     <pre>$ git clone git://github.com/battlehorse/google-charts-controls-gallery</pre>
   </p>
 
-  <h2>Source code</h2>
   <p>
-    Get the source code on GitHub :
-    <a href="http://github.com/battlehorse/google-charts-controls-gallery">battlehorse/google-charts-controls-gallery</a>
+    Finally, you can download this project in either
+    <a href="http://github.com/battlehorse/google-charts-controls-gallery/zipball/master">zip</a> or
+    <a href="http://github.com/battlehorse/google-charts-controls-gallery/tarball/master">tar</a> formats.
   </p>
+  
+  <h2>Contact</h2>
+  <p>
+    Look for documentation at the <a href="http://code.google.com/apis/chart/index.html">
+      Google Chart Tools</a> homepage. Ask questions in the
+    <a href="https://groups.google.com/forum/#!forum/google-visualization-api">forum</a>
+    or ping me directly at <a href="mailto:battlehorse@gmail.com">battlehorse@gmail.com</a>.
+  </p>
+  
 </body>
 </html>
