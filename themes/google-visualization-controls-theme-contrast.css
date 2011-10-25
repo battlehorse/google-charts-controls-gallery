@@ -1,0 +1,240 @@
+.google-visualization-controls-theme-contrast .google-visualization-controls-label {
+  color: #000;
+  line-height: 27px;
+  font-size: 16px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-stringfilter INPUT {
+  border: 2px solid #000;
+  color: #222;
+  line-height: 27px;
+  height: 27px;
+  padding-left: 4px;
+  font-size: 16px;
+  min-width: 15em;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-stringfilter INPUT:hover {
+  background-color: #ffc;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-stringfilter INPUT:focus {
+  background-color: #ff0;
+  outline: none;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-rangefilter-thumblabel {
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+  line-height: 27px;
+  height: 27px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical {
+  background-color: #fff;
+  border: 2px solid black;
+  outline: 0;
+  position: relative;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal {
+  height: 16px;
+  margin: 0 0.3em;  
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical {
+  width: 16px;
+  margin: 0.3em 0;
+  left: 0.4em;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal .google-visualization-controls-slider-thumb,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical .google-visualization-controls-slider-thumb {
+  background-color: #999;
+  border: 2px solid #000;
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal .google-visualization-controls-slider-thumb {
+  top: -6px;
+  height: 25px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical .google-visualization-controls-slider-thumb {
+  left: -6px;
+  width: 25px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal:hover .google-visualization-controls-slider-thumb,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal:focus .google-visualization-controls-slider-thumb{
+  background-color: #fff;
+  cursor: pointer;
+  cursor: col-resize;  
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical:hover .google-visualization-controls-slider-thumb,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical:focus .google-visualization-controls-slider-thumb{
+  background-color: #fff;
+  cursor: pointer;
+  cursor: row-resize;  
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal .google-visualization-controls-slider-handle {
+  background-color: #ffc;
+  opacity: 1;
+  height: 16px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical .google-visualization-controls-slider-handle {
+  background-color: #ffc;
+  opacity: 1;
+  width: 16px;  
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal:hover .google-visualization-controls-slider-handle,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-horizontal:focus .google-visualization-controls-slider-handle,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical:hover .google-visualization-controls-slider-handle,
+.google-visualization-controls-theme-contrast .google-visualization-controls-slider-vertical:focus .google-visualization-controls-slider-handle {
+  background-color: #ff0;
+  cursor: pointer;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-menu-button {
+  border:2px solid #000;
+  min-width: 54px;
+  line-height: 27px;
+  color: #000;
+  font-size: 16px;
+  background: none;
+  background-color: #ffc;
+  -webkit-border-radius:3px;
+  -moz-border-radius: 3px;
+	border-radius: 3px;  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-menu-button.goog-menu-button-hover {
+	color: #000;
+	background-color: #ff0;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-menu-button.goog-menu-button-focused {
+  border-color: #4d90fe;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-menu-button-outer-box {
+  border: 0;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-menu-button-inner-box {
+  border: 0;
+  padding: 3px 8px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-menu-button-dropdown {
+  background-position: -388px 5px;
+}
+
+.goog-menu {
+  background: #fff !important;
+	border:2px solid #000 !important;
+	white-space: nowrap;
+  padding: 0 0 4px 0 ! important;
+	-webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.goog-menuitem {
+	-moz-transition: background 0.130s;
+	-o-transition: background 0.130s;
+	-webkit-transition: background 0.130s;
+	transition: background 0.130s;  
+  line-height: 17px;
+  padding-top: 6px ! important;
+  padding-bottom: 6px ! important;
+}
+
+.goog-menuitem-content {
+  color: #000 !important;
+}
+
+.goog-menuitem.goog-menuitem-highlight {
+  background-color: #ff0;
+  border: 0 ! important;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-combobox {
+  background: none;
+  border: 2px solid #000;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  overflow: hidden;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-combobox:hover {
+  background-color: #ffc;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-combobox.goog-combobox-active {
+  background-color: #ff0;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-combobox .goog-combobox-button {
+  line-height: 27px;
+  height: 27px;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-combobox INPUT {
+  color: #000;
+  line-height: 27px;
+  height: 27px;
+  padding-left: 4px;
+  font-size: 16px;
+  min-width: 15em;
+  border: 0;
+  background-color: transparent;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter .goog-combobox INPUT:focus {
+  outline: none;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter-selected .goog-container {
+  font-size: 16px;
+  border: 2px solid #000;
+  height: 27px;
+  line-height: 27px;
+  color: #fff;
+  background-color: #666;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;  
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter-selected .goog-container:hover {
+  background-color: #999;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter-selected .goog-container .goog-link-button {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.google-visualization-controls-theme-contrast .google-visualization-controls-categoryfilter-selected .goog-container .goog-link-button:hover {
+  color: #ff0;
+}
